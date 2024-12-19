@@ -6,54 +6,15 @@ This challenge is designed to assess your Android engineering skills through the
 ## Project Objective
 Implement the requirements below to create a weather forecast application using the OpenWeatherMap API to showcase your ability to design scalable, maintainable, and high-quality Android software.
 
-## API Endpoints
+# OpenWeatherMap API Information
+### API Endpoints
 | Endpoint | Remarks |
 |---|-----|
 | [5 day weather forecast](https://openweathermap.org/forecast5) | Note the 3 hour time period in forecast data, this must be aggregated to get daily min/max values. |
 | [GeoCoding API](https://openweathermap.org/api/geocoding-api) | Fetch coordinates for a text based search term to use in forecast/current weather API calls. |
 | [Current Weather](https://openweathermap.org/current) | Fetch current conditions for the given coordinates.
 
-# Requirements
-
-> **Important**: Pay close attention to the requirement to aggregate 3 hour forecast windows in the 5 day forecast data to get daily min/max forecast values.
-
-### Location-Based Weather
-- Automatically fetch and display current weather for the user's current location
-- Handle location services unavailability gracefully
-- Provide 5-day forecast for current location
-
-### Search and Location Management
-- Implement city search functionality
-  - Allow searching locations by city name
-  - Display search results
-  - Enable selecting a search result to view its weather
-  - Show 5-day forecast for selected location
-
-### Saved Locations
-- Save favorite locations
-- Display a list of saved locations
-- Allow switching between saved locations
-
-### Weather Display
-- Show weather in metric units
-- Use weather condition icons
-  - Use provided OpenWeatherMap icons.
-
-## Error Handling
-- Gracefully manage:
-  - Network connectivity issues
-  - API errors
-  - Location service restrictions
-
-
-## Technical Constraints
-- Use Kotlin & Jetpack Compose
-- Implement robust error management
-- Create intuitive, responsive UI
-
-## API Configuration
-
-### OpenWeatherMap API Setup
+### API Configuration
 
 #### 1. Generate an OpenWeatherMap API Key
 1. Visit [OpenWeatherMap](https://openweathermap.org/api)
@@ -70,7 +31,50 @@ Implement the requirements below to create a weather forecast application using 
 #### 3. Consumming the API Key
 An `APIKeyManager` helper object is provided for you to access the API key. If the previous two steps are followed then the API key can simply be accessed via `APIKeyManager.apiKey` anywhere in the project.
 
-## Bonus Challenges
+# Project Requirements
+
+> **Important**: Pay close attention to the requirement to aggregate 3 hour forecast windows in the 5 day forecast data to get daily min/max forecast values.
+
+## General Requirements
+These are the general requirements that apply broadyly to the specific functional requirements that are to be implemented.
+
+#### Weather Display
+  - Show weather in metric units
+  - Use weather condition icons
+  - Use provided OpenWeatherMap icons.
+
+### Error Handling
+  - Gracefully manage:
+  - Network connectivity issues
+  - API errors
+  - Location service restrictions
+
+### Technical Constraints
+  - Use Kotlin & Jetpack Compose
+  - Implement robust error management
+  - Create intuitive, responsive UI
+----
+
+## Functional Requirements
+
+#### 1. Display weather for current location
+  - Automatically fetch and display current weather for the user's current location
+  - Display 5-day forecast for current location
+  - Handle location services unavailability gracefully
+
+#### 2. Location search and management
+  - Implement city search functionality
+  - Allow searching locations by city name
+  - Display search results
+  - Select a search result to view current weather and five day forecast
+  - Show 5-day forecast for selected location
+
+#### 3. Save Locations
+  - Save favorite locations
+  - Display a list of saved locations
+  - Switch between saved locations
+
+#### Bonus Points
 - Implement offline caching
 - Support multiple temperature units
 - Implement widget extension
@@ -87,5 +91,5 @@ An `APIKeyManager` helper object is provided for you to access the API key. If t
 ## Questions?
 If you have any questions or need any clarifications, please reach out to your hiring manager or recruiter.
 
-**Good luck!**
+# **🎉 Good luck and happy coding! 🎉**
 
