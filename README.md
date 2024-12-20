@@ -52,6 +52,7 @@ These are the general requirements that apply broadyly to the specific functiona
 ---
 
 ## Functional Requirements
+> Complete the functional requirements in the order specified below. If all the requirements cannot be implemented in the recomended timeframe we will complete our evaluation based on the completed requirements.
 
 #### 1. Display weather for current location
   - Automatically fetch and display current weather for the user's current location
